@@ -115,8 +115,8 @@ function setModuleResolutionKind(parsedConfig: ParsedCommandLine): ParsedCommand
   return {
     ...parsedConfig,
     options: {
-      ...parsedConfig.options,
-      moduleResolution
+      moduleResolution,
+      ...parsedConfig.options
     }
   };
 }
